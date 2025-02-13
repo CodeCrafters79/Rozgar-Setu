@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:fadeScrollbars="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header Image -->
+        <ImageView
+            android:id="@+id/about_image"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/about_us"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rozgar Setu"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme_dark"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- App Description -->
+        <TextView
+            android:id="@+id/about_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your gateway to a brighter future! Rozgar Setu is a revolutionary job-search platform that seamlessly connects employees with potential employers, ensuring a smooth and hassle-free hiring process."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp"/>
+
+        <!-- Key Features Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌟 Key Features"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_dark"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔ Advanced job search filters\n✔ Direct employer-employee connections\n✔ Verified job postings secure hiring\n✔ AI-powered job recommendations\n✔ Simple user-friendly interface"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+        <!-- Team Members Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👨‍💼 Our Team"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_dark"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• John Doe - CEO Founder\n• Jane Smith - CTO  Co-founder\n• Mark Johnson - Head of Operations"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+        <!-- Contact Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📞 Contact Us"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_dark"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_mobile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 9429098329"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icon_email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="codecrafters@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Social Media Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_bg"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌍 Connect With Us"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/theme_dark"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/facebook_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📘 Facebook"
+                android:textSize="14sp"
+                android:textColor="@color/theme_dark"/>
+
+            <TextView
+                android:id="@+id/instagram_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷 Instagram"
+                android:textSize="14sp"
+                android:textColor="@color/theme_dark"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/twitter_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🐦 Twitter"
+                android:textSize="14sp"
+                android:textColor="@color/theme_dark"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Close Button -->
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/theme_dark"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+</ScrollView>
