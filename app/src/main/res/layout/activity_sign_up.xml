@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -148,7 +147,7 @@
                 android:layout_weight="1"
                 android:hint="Birth Date"
                 android:layout_marginRight="@dimen/_5sdp"
-                app:startIconDrawable="@drawable/icon_mobile"
+                app:startIconDrawable="@drawable/icon_cake"
                 app:startIconContentDescription="Description Here"
                 app:startIconTint="@color/theme_dark"
                 style="@style/MyTextInputLayoutStyle">
@@ -168,7 +167,6 @@
                 android:layout_weight="1"
                 android:hint="Age"
                 android:layout_marginLeft="@dimen/_5sdp"
-                app:startIconDrawable="@drawable/icon_mobile"
                 app:startIconContentDescription="Description Here"
                 app:startIconTint="@color/theme_dark"
                 style="@style/MyTextInputLayoutStyle">
@@ -202,8 +200,92 @@
             android:id="@+id/switch_working"
             android:trackTint="#E0C3B8"
             android:thumbTint="@color/theme_dark"
-            android:text="Yes"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            android:text="Yes"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of the place?"
+            app:startIconContentDescription="Description Here"
+            app:startIconTint="@color/theme_dark"
+            style="@style/MyTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wheredoyouwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Field of your work?"
+            app:startIconContentDescription="Description Here"
+            app:startIconTint="@color/theme_dark"
+            style="@style/MyTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/feild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Approximate earning?"
+            app:startIconContentDescription="Description Here"
+            app:startIconTint="@color/theme_dark"
+            style="@style/MyTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/earning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location of the place?"
+            app:startIconContentDescription="Description Here"
+            app:startIconTint="@color/theme_dark"
+            style="@style/MyTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Why do you want to join this?"
+            app:startIconContentDescription="Description Here"
+            app:startIconTint="@color/theme_dark"
+            style="@style/MyTextInputLayoutStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/join"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Signup Button -->
         <Button
@@ -216,6 +298,5 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:padding="12dp"/>
-
     </LinearLayout>
 </ScrollView>

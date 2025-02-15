@@ -7,6 +7,11 @@
         android:title="Home"/>
 
     <item
+        android:id="@+id/post_job"
+        android:icon="@drawable/icon_add"
+        android:title="Post Job"/>
+
+    <item
         android:id="@+id/nav_settings"
         android:icon="@drawable/icon_settings"
         android:title="Settings"/>
